@@ -34,7 +34,7 @@ def callback():
     token_info = sp_auth.get_access_token(code=code)
     session['token_info'] = token_info
 
-    return redirect(url_for('info'))
+    return redirect('/')
 
 @app.route('/info/<id>')
 def info(id):
