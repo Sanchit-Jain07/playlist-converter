@@ -8,7 +8,7 @@ from spotify import create_spotify_playlist
 # from utils import get_all_top_tracks, get_all_top_artists, get_audio_features, get_recommended_artists, get_recommendations, get_user, create_playlist
 os.environ['SPOTIPY_CLIENT_ID'] = '58678ff94eae4339a525074449dc013e'
 os.environ['SPOTIPY_CLIENT_SECRET'] = '9315af7bbec44e93b8cdb1082ffe14e4'
-os.environ['SPOTIPY_REDIRECT_URI'] = 'playlistconvertertest.herokuapp.com/callback'
+os.environ['SPOTIPY_REDIRECT_URI'] = 'http://playlistconvertertest.herokuapp.com/callback'
 app = Flask(__name__)
 app.secret_key = 'secretverysecret'
 
